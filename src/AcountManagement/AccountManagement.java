@@ -8,11 +8,12 @@ public class AccountManagement {
         this.accountBalance = accountBalance;
     }
 
-    public synchronized   void debitToAccount(long value){
-        accountBalance+=value;
+    public synchronized void debitToAccount(long value) {
+        accountBalance += value;
     }
-    public synchronized  void creditToAccount(long value){
-        accountBalance-=value;
+
+    public synchronized void creditToAccount(long value) {
+        accountBalance -= value;
     }
 
     public long getAccountBalance() {
